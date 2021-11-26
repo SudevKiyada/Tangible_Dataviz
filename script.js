@@ -11,9 +11,9 @@ let eventsArray = ["Diwali/Deepavali", "Ramzan Id/Eid-ul-Fitar", "Christmas", "R
 let x, y, r;
 
 Promise.all([
-    d3.json('./assets/phoneData.json', d3.autoType),
-    d3.json('./assets/cameraData.json', d3.autoType),
-    d3.csv('./assets/calendar.csv', d3.autoType)
+    d3.json('assets/phoneData.json', d3.autoType),
+    d3.json('assets/cameraData.json', d3.autoType),
+    d3.csv('assets/calendar.csv', d3.autoType)
 ]).then(function(files){
   
   phoneData = files[0],
