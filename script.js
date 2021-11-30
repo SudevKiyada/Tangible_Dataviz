@@ -6,7 +6,7 @@ let svg, phoneLineChart, cameraLineChart, circleChart, calendarChart, calendarTe
 
 let toggle = false, knobVisibility = 0;
 
-let eventsArray = ["Diwali/Deepavali", "Ramzan Id/Eid-ul-Fitar", "Christmas", "Republic Day", "Independence Day", "Holi", "Dussehra"];
+let eventsArray = ["Diwali/Deepavali", "Ramzan Id/Eid-ul-Fitar", "Christmas", "Republic Day", "Independence Day", "Holi", "Dussehra", "New Year's Day", "New Year's Eve"];
 
 let x, y, r;
 
@@ -101,8 +101,8 @@ Promise.all([
               .attr("opacity", 0)
               .append("path")
               .datum(phoneData)
-              .attr("fill", "#FF149311")
-              .attr("stroke", "deeppink")
+              .attr("fill", "#FFD70011")
+              .attr("stroke", "none")
               .attr("stroke-width", 2)
               .attr("d", d3.area()
                 .x((d, i) => x(i))
